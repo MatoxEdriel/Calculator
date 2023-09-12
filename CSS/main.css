@@ -2,7 +2,10 @@
 
 body{
 
-    background: linear-gradient(#1e5799 0%,#2989d8 50%,#7db9e8 100%); 
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #201f1f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto', sans-serif;
     
 
 
@@ -22,9 +25,9 @@ h1{
 
 .cuadrado {
     width: 75%;
-    height: 75%;
+    height: 30%;
     background-color: #f0f0f0;
-    border: 2px solid #333;
+    
     border-radius: 20px;
     margin: 0 auto; /* Centrar horizontalmente */
     display: flex;
@@ -33,6 +36,8 @@ h1{
     align-items: center;
     padding: 10px;
     margin-bottom: 75px;
+    background: transparent; 
+
  
 }
 
@@ -50,9 +55,6 @@ h1{
 }
  */
 
-.boton:hover {
-    background-color: #00796b;
-}
 
 .tareas {
     display:flex;
@@ -63,24 +65,37 @@ h1{
 
 }
 #inputNotas{
-    background-color: rgb(198, 201, 198);
+    background-color: transparent;
     list-style: none;
     margin: 0;
     padding: 0;
     margin-left: 10%;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
     
+ 
+    
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .text1{
 
-    width: 100%; /* Establece el ancho inicial al 100% para que ocupe todo el ancho del contenedor padre */
-    max-width: 500px; /* Establece un ancho máximo para evitar que se expanda indefinidamente */
-    margin: 0 auto; /* Centra el elemento horizontalmente */
-    padding: 20px; /* Añade relleno para un mejor aspecto */
+    width: 100%;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 20px; 
   
-    /* Otras propiedades de estilo según tus necesidades */
-    background-color: white;
-    box-sizing: border-box; /* Incluye el relleno en el ancho total */
+  
+    background-color: transparent;
+    box-sizing: border-box; 
+    color: white;
+
 
 
 }
